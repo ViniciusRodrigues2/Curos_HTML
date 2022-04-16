@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+body{
+    background-color: #56c6e2;
+}
+div{
+    width: 400px;
+    height: 20px;
+}
+.grid-column-1{
+    display: grid;
+    background-color: rgb(145, 145, 145);
+    grid-template-columns: repeat(4,50px);
+}
+.grid-column-1 .grid-items{
+    background-color: rgb(241, 153, 153);
+}
+.grid-column-1 .grid-items:nth-child(2){
+    background-color: aqua;
+    grid-column: 2/4;
+}
